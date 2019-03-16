@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Financial Planning Software | Built for Advisors and Enterprises | eMoney
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    @import "compass/css3";
+
+    .navigation {
+      list-style: none;
+      margin: 0;
+
+      background: white;
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: Grey;
+    }
+
+    .navigation a:hover {
+      background: darken(Grey, 2%);
+    }
+
+    @media all and (max-width: 800px) {
+      .navigation {
+        justify-content: space-around;
+      }
+    }
+
+    @media all and (max-width: 600px) {
+      .navigation {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+      }
+
+      .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .navigation li:last-of-type a {
+        border-bottom: none;
+      }
+    }
+  </style>
+  <body>
+    <ul class="navigation">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">eMoney for Enterprise</a></li>
+      <li><a href="#">Current Customers</a></li>
+    </ul>
+  </body>
+</html>
